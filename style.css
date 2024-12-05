@@ -1,0 +1,117 @@
+/*font*/
+@font-face {
+    font-family: "UberMove";
+    font-display: fallback;
+    src: url("asset/fonts/fonts/UberMove-400.woff2") format("woff2");
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: "UberMove";
+    font-display: fallback;
+    src: url("asset/fonts/fonts/UberMove-500.woff2") format("woff2");
+    font-weight: 500;
+  }
+  @font-face {
+    font-family: "UberMove";
+    font-display: fallback;
+    src: url("asset/fonts/fonts/UberMove-700.woff2") format("woff2");
+    font-weight: 700;
+  }
+  @font-face {
+    font-family: "UberMoveText";
+    font-display: fallback;
+    src: url("asset/fonts/fonts/UberMoveText-400.woff2") format("woff2");
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: "UberMoveText";
+    font-display: fallback;
+    src: url("asset/fonts/fonts/UberMoveText-500.woff2") format("woff2");
+    font-weight: 500;
+  }
+  @font-face {
+    font-family: "UberMoveText";
+    font-display: fallback;
+    src: url("asset/fonts/fonts/UberMoveText-700.woff2") format("woff2");
+    font-weight: 700;
+  }
+
+  :root{
+    --primary:#000000;
+    --secondary:#ffffff
+  }
+body{
+    margin: 0;
+    padding: 0;
+}
+/*home*/
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://www.ubereats.com/_static/d8ceaf24a3164759.webp");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    padding: 0 16px;
+    height: 48px;
+    justify-content: flex-start;
+    align-items: center;
+}
+.burger{
+    margin-right: 10px;
+    margin-left: -6px;
+    margin-top: 2px;
+}
+.burger-btn{
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+}
+.logo img{
+    display: block;
+    width:auto;
+    height: 16px;
+}
+.space{
+    flex: 1;
+    display: block;
+}
+.account{
+   width: 36px;
+   height: 36px;
+   border-radius: 500px; 
+   background: var(--secondary);
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   margin-right: 12px;
+}
+.account img{
+    width:16px;
+    height: 16px;
+}
+.signup{
+    height: 36px;
+    padding: 8px 12px;
+    border-radius: 500px;
+    display: inline-flex;
+    justify-content: centeral;
+    align-items: center;
+    background-color: var(--primary);
+    box-sizing: border-box;
+}
+.signup a { 
+    text-decoration: none;
+    color: var(--secondary);
+    line-height: 16px;
+    font-weight: 500;
+    font-size: 14px;
+    font-family: "UberMoveText";
+}
