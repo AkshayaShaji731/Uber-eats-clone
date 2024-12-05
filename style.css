@@ -115,3 +115,134 @@ body{
     font-size: 14px;
     font-family: "UberMoveText";
 }
+main{
+  /* display: block; */
+  display:flex;
+justify-content: center;
+align-items: center;
+}
+.banner{
+  position:absolute;
+  top: 104px;
+  padding: 0 16px;
+  display: block;
+}
+.banner h2{
+  margin-top: 0px;
+  margin-bottom:24px;
+  line-height:44px;
+  font-weight:700;
+  font-size: 36px;
+  font-family: "UberMove";
+  display: block;
+}
+.container{
+  padding:8px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.input-container-1{
+  display: flex;
+  padding-left: 4px;
+  height: 56px;
+ 
+  background-color: var(--secondary);
+}
+.input-container-1 img{
+  width: 24px;
+  height: 24px;
+  /* margin: 12px; */
+  margin-top: 16px;
+  margin-bottom: 12px;
+  margin-left: 12px;
+  margin-right: 12px;
+  display:inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.input-container-1 .text{
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+  color:#4B4B4B;
+  font-family: "UberMoveText";
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.input-container-2{
+  display: flex;
+  padding-left: 4px;
+  height: 56px;
+  background-color: var(--secondary);
+}
+.input-container-2 img{
+  width: 24px;
+  height: 24px;
+  /* margin: 12px; */
+  margin-top: 16px;
+  margin-bottom: 12px;
+  margin-left: 12px;
+  margin-right: 12px;
+  display:inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.input{
+  display: flex;
+}
+.input-container-2 .text{
+  font-size: 16px;
+  font-weight:500;
+  line-height: 20px;
+  color:var(--primary);
+  font-family: "UberMoveText";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+.input-container-2 .drop{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+}
+.input-container-2 .drop img{
+  width: 24px;
+  height: 24px;
+  margin-left:213px;
+  margin-top: 20px;
+  display:inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.search{
+  margin-top:8px;
+  border-radius: 8px;
+  padding: 17px 0  0 93.7px ;
+  min-height: 56px;
+  font-size: 18px;
+  font-weight:500;
+  font-family:"UberMoveText";
+  background-color: var(--primary);
+  color: var(--secondary);
+  cursor: pointer;
+  justify-content: center;
+  align-items:center;
+  box-sizing: border-box;
+  width: 100%;
+}
+.link{
+  font-size:14px;
+  font-weight: 500;
+  font-family: "UberMoveText";
+  margin-top:24px;
+  line-height: 16px;
+}
+.link a{
+  color:var(--primary);
+
+}
