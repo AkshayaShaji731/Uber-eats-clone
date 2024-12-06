@@ -360,32 +360,38 @@ align-items: center; */
   font-family: "UberMoveText";
   text-decoration: underline;
 }
-.service-1,.service-2,.service-3{
+.service-1,.service-2{
   margin-bottom:36px;
 }
+.space-service{
+  height: 48px;
+  flex-shrink: 0;
+  display: block;
+}
 .city-container{
-  margin: 0 16px;
+  margin:0 16px;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 .city-container p{
-  margin-top: 12px;
+  margin: 0;
+  padding: 0;
   line-height: 32px;
   font-size: 24px;
   font-weight: 700;
   font-family: "UberMove";
 }
 .map{
-  margin-top:-45px;
-  margin-bottom: 12px;
+margin: 15px  0 10px 0;
 }
 .map img{
-  margin: 0;
+  /* margin: 16px 0; */
   width:100%;
   height:362px;
 }
 .grid-city-container{
+  margin: 0px;
   display: grid;
   grid-template-columns:repeat(2,1fr);
   grid-template-rows: repeat(6,1fr);
@@ -393,11 +399,55 @@ align-items: center; */
   color: var(--primary);
 }
 .grid-city{
-  line-height: 20px;
+  /* margin-top: 12px; */
+  line-height: 24px;
   font-weight:normal;
   font-size: 16px;
   font-family: "UberMoveText";
   cursor: pointer;
-  
+}
+.citylink-space{
+  height:24px;
+  display: block;
+  flex-shrink: 0;
+}
+#city-link{
+  text-decoration: underline;
+  color: var(--primary);
+  line-height: 20px;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "UberMoveText";
+  cursor: pointer;
 
+}
+.space-city{
+  height: 48px;
+  display: block;
+}
+.country-container{
+  margin: 0 16px;
+  display: flex;
+  justify-content:center;
+  flex-direction: column;
+}
+.country-container p{
+  line-height: 32px;
+  font-size: 24px;
+  font-weight:700;
+  font-family: "UberMove";
+  margin: 0;  
+}
+.grid-country-container{
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns:repeat(2,1fr);
+  grid-template-rows: repeat(6,1fr);
+  gap: 24px 8px;
+}
+.grid-country{
+  line-height: 24px;
+  font-weight: normal;
+  font-size: 16px;
+  font-family: "UberMoveText";
 }
