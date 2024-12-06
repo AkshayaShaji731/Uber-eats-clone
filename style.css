@@ -442,7 +442,7 @@ margin: 15px  0 10px 0;
   margin-top: 24px;
   display: grid;
   grid-template-columns:repeat(2,1fr);
-  grid-template-rows: repeat(6,1fr);
+  grid-template-rows: repeat(15,1fr);
   gap: 24px 8px;
 }
 .grid-country{
@@ -451,3 +451,105 @@ margin: 15px  0 10px 0;
   font-size: 16px;
   font-family: "UberMoveText";
 }
+.countrylink-space{
+  height:24px;
+  flex-shrink:0;
+}
+#country-link{
+  text-decoration:underline;
+  line-height: 20px;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "UberMoveText";
+  cursor: pointer;
+  color: var(--primary);
+}
+footer{
+  border-top: 1px solid #f3f3f3;
+  margin-top: 64px;
+  padding: 64px 16px 80px;
+  display: block;
+}
+#footer-logo{
+  margin-bottom: 48px;
+  height:24px;
+  width:auto;
+}
+.app-icon{
+  margin-bottom: 64px;
+  display: block;
+}
+.app-logo{
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  flex-flow: row wrap;
+}
+.app-logo img{
+  width: auto;
+  height: 40px;
+  cursor: pointer;
+}
+.footer-container-1{
+  margin-bottom: 64px;
+  display: flex;
+  flex-direction: column;
+}
+.footer-container-1 a{
+  margin-bottom: 16px;
+  line-height: 24px;
+  font-weight: normal;
+  font-size: 16px;
+  font-family:"UberMoveText";
+  display: inline-flex;
+  color: var(--primary);
+  text-decoration: none;
+}
+.footer-container-2{
+  margin-bottom:64px;
+  display: flex;
+  flex-direction: column;
+}
+.footer-container-2 a{
+   margin-bottom: 16px;
+   line-height:24px;
+   font-weight: normal;
+   font-size: 16px;
+   font-family:"UberMoveText";
+   color: var(--primary);
+   display: inline-flex; 
+   text-decoration: none;
+}
+#lanuage{
+  flex: none;
+  width: 16px;
+  height: 16px;
+}
+#lanuage div{
+  width: 8px;
+  height: 1px;
+  flex-shrink: 0;
+}
+footer hr{
+margin: 40px 0;
+height: 1px;
+border:none;
+width: 100%;
+color: #f3f3f3;
+background-color: #f3f3f3;
+} 
+.social-media{
+  margin-bottom: 40px;
+  gap: 24px;
+  color: var(--primary);
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+.social-media img{
+  flex: none;
+  width:16px;
+  height: 16px;
+  cursor: pointer;
+}
+
