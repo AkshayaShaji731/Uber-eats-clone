@@ -509,6 +509,7 @@ footer{
   margin-bottom:64px;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 .footer-container-2 a{
    margin-bottom: 16px;
@@ -531,16 +532,16 @@ footer{
   flex-shrink: 0;
 }
 footer hr{
+  position: relative;
 margin: 40px 0;
 height: 1px;
 border:none;
-width: 100%;
+/* width: 100%; */
 color: #f3f3f3;
 background-color: #f3f3f3;
 } 
 .social-media{
   margin-bottom: 40px;
-  gap: 24px;
   color: var(--primary);
   display: flex;
   flex-direction: row;
