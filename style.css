@@ -74,6 +74,13 @@ body{
   background: transparent;
   border: none;
 }
+.burger-btn:hover{
+  background-color: var(--secondary);
+  border-top-left-radius:50%;
+  border-top-right-radius:50%;
+  border-bottom-left-radius:50%;
+  border-bottom-right-radius:50%;
+}
 .logo img{
   display: block;
   width:auto;
@@ -92,10 +99,14 @@ body{
  justify-content: center;
  align-items: center;
  margin-right: 12px;
+ cursor: pointer;
 }
 .account img{
   width:16px;
   height: 16px;
+}
+.account:hover{
+  background-color: #f3f3f3;
 }
 .signup{
   height: 36px;
@@ -114,6 +125,9 @@ body{
   font-weight: 500;
   font-size: 14px;
   font-family: "UberMoveText";
+}
+.signup:hover{
+  background-color: #282828;
 }
 main{
 /* display: block; */
@@ -239,22 +253,7 @@ width: 100%;
 box-sizing: border-box;
 text-decoration:none;
 }
-/* .search{
-margin-top:8px;
-border-radius: 8px;
-padding: 17px 0  0 93.7px ;
-min-height: 56px;
-font-size: 18px;
-font-weight:500;
-font-family:"UberMoveText";
-background-color: var(--primary);
-color: var(--secondary);
-cursor: pointer;
-justify-content: center;
-align-items:center;
-box-sizing: border-box;
-width: 100%;
-} */
+
 .link{
 font-size:14px;
 font-weight: 500;
