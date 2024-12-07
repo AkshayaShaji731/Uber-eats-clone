@@ -350,6 +350,7 @@ align-items: center;
   display:block;
 }
 .service{
+  height: 100%;
   margin: 0 16px;
   display: flex;
   flex-direction: column;
@@ -496,16 +497,21 @@ footer{
   width:auto;
 }
 .app-icon{
-  margin-top: -1px;
-  margin-bottom: 65px;
+     margin-top: -1px; 
+     margin-bottom: 63px;
+  /* margin-bottom: 64px; */
   display: block;
 }
 .app-logo{
-  margin-top: 1px;
+  /* margin-top: 1px; */
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
   gap: 16px;
   flex-flow: row wrap;
+}
+.app-logo a{
+  text-decoration:none;
+  color:var(--primary);
 }
 .app-logo img{
   width: auto;
@@ -513,18 +519,28 @@ footer{
   cursor: pointer;
 }
 .footer-container-1{
-  margin-top: -2px;
+  /* margin-top: -2px; */
   margin-bottom: 64px;
   display: flex;
   flex-direction: column;
 }
-.footer-container-1 a{
+.footer-container-1 .a-tag{
   margin-bottom: 16px;
   line-height: 24px;
   font-weight: normal;
   font-size: 16px;
   font-family:"UberMoveText";
-  display: inline-flex;
+  display: flex;
+  color: var(--primary);
+  text-decoration: none;
+}
+.footer-container-1 #promo{
+  margin-bottom: 0px;
+  line-height: 24px;
+  font-weight: normal;
+  font-size: 16px;
+  font-family:"UberMoveText";
+  display:flex;
   color: var(--primary);
   text-decoration: none;
 }
@@ -532,19 +548,33 @@ footer{
   margin-bottom:64px;
   display: flex;
   flex-direction: column;
-  position: relative;
+  /* position: relative; */
 }
-.footer-container-2 a{
+.footer-container-2 .b-tag{
    margin-bottom: 16px;
    line-height:24px;
    font-weight: normal;
    font-size: 16px;
    font-family:"UberMoveText";
    color: var(--primary);
-   display: inline-flex; 
+   display:flex; 
    text-decoration: none;
 }
+/* .space-container{
+  height:0px;
+  flex-shrink:0;
+} */
 #lanuage{
+   line-height:24px;
+   font-weight: normal;
+   font-size: 16px;
+   font-family:"UberMoveText";
+   color: var(--primary);
+   display: flex; 
+   text-decoration: none;
+   margin-bottom: 0px;
+}
+#lanuage img{
   flex: none;
   width: 16px;
   height: 16px;
@@ -556,7 +586,7 @@ footer{
 }
 footer hr{
 position: relative;
-margin-bottom: 40px;
+margin: 40px 0;
 height: 1px;
 border:none;
 /* width: 100%; */
@@ -575,6 +605,7 @@ background-color: #f3f3f3;
   width:16px;
   height: 16px;
   cursor: pointer;
+  margin-bottom: 4px;
 }
 .footer-container-3{
   display: flex;
