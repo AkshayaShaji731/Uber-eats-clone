@@ -108,12 +108,36 @@ body{
 .account:hover{
   background-color: #f3f3f3;
 }
+.account-lap{
+  margin-right: 16px;
+  background-color: var(--secondary);
+  height:36px;
+  padding: 12px;
+  border-radius:500px;
+  white-space: nowrap;
+  box-sizing: border-box;
+  cursor: pointer;
+  display:none;
+  /* display: inline-flex;
+  justify-content: center;
+  align-items: center; */
+  color: var(--primary);
+  line-height:16px;
+  font-weight: 500;
+  font-size:14px;
+  font-family: "UberMoveText";
+  text-decoration: none;
+}
+
+.account-lap:hover{
+  background-color:#f3f3f3;
+}
 .signup{
   height: 36px;
   padding: 8px 12px;
   border-radius: 500px;
   display: inline-flex;
-  justify-content: centeral;
+  justify-content: center;
   align-items: center;
   background-color: var(--primary);
   box-sizing: border-box;
@@ -151,10 +175,16 @@ font-family: "UberMove";
 display: block;
 }
 .container{
-padding:8px 0;
+padding:10px 0;
 display: flex;
 flex-direction: column;
 gap: 8px;
+}
+.space-container{
+  width:7px;
+  height: 1px;
+  flex-shrink: 0;
+  display: none;
 }
 .input-container-1{
 display: flex;
@@ -662,4 +692,132 @@ line-height: 20px;
 font-size: 14px;
 font-weight: normal;
 font-family: "UberMoveText";
+}
+
+
+/* -----------------labtop 1024--------------- */
+
+@media screen and (min-width: 1024px){
+  .wrapper{
+    overflow: hidden;
+    background-image: url("https://www.ubereats.com/_static/c413f20400e04805.webp");
+  }
+  .header{
+    height:64px;
+    padding: 0 40px;
+  }
+  .burger {
+    margin-left: -14px;
+   margin-right:8px;
+  }
+  .burger-btn{
+    width: 48px;
+    height: 48px;
+  }
+   .burger .space{
+    /* min-width: 250px; */
+    display: flex;
+    justify-content: center;
+    align-self: flex-start;
+    flex: 1 1 auto;
+  }
+  .account{
+    display: none;
+  }
+  .account-lap{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+  .signup{
+    justify-content: center;
+  }
+  main{
+    display: flex;
+    justify-content: left;
+    min-width: 1024px;
+    max-width: 1928px;
+    position: relative;
+    margin-top:169px;
+    /* padding: 0 40px; */
+    padding: 0 24px;
+  }
+  .banner h2{
+    /* max-width:60%; */
+    width: 100%;
+    margin-bottom: 30px;
+    line-height: 64px;
+    font-size:52px;
+    /* font-weight: 700;
+    font-family: "UberMove"; */
+  }
+  .container{
+    /* margin: 0; */
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: flex-start;
+  } 
+
+  .space-container{
+    display:block;
+  }
+  .input-container-1{
+    min-width: 496px;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    /* padding: 8px 16px; */
+    position: relative;
+  }
+  .input-container-1 img{
+   flex-shrink: 0;
+   /* padding: 8px 0; */
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   margin-right: 16px;
+  }  
+  .input .space{
+    width:4px;
+  }
+   .input-container-1 .text{
+    font-weight: 500;
+   }
+  .search{
+    width:max-content;
+  }
+  .link{
+    margin-top: 14px;
+  }
+  .space-maintop{
+   display: none;
+  }
+  .uber-app{
+    display: none;
+  }
+  .space-service{
+    height: 65px;
+  }
+  .service{
+    margin: 0 -12px -24px -12px;
+    box-sizing: border-box;
+   display: flex;
+   flex-wrap: nowrap;
+    /* padding: 0 12px; */
+    width: 100%;
+    margin-bottom: 24px;
+    flex-direction: row;
+    
+  }
+  .service-1,.service-2 ,.service-3{
+    width:33.33%;
+    padding: 0 12px;
+  }
+  .service #head{
+    font-size: 28px;
+  }
+  .search{
+    margin-top:0px;
+  }
 }
