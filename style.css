@@ -745,7 +745,6 @@ font-family: "UberMoveText";
 
 @media screen and (min-width: 1024px){
   .wrapper{
-    overflow: hidden;
     background-image: url("https://www.ubereats.com/_static/c413f20400e04805.webp");
   }
   .header{
@@ -761,7 +760,7 @@ font-family: "UberMoveText";
     height: 48px;
   }
    .burger .space{
-    /* min-width: 250px; */
+    min-width: 250px;
     display: flex;
     justify-content: center;
     align-self: flex-start;
