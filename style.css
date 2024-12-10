@@ -752,11 +752,21 @@ font-family: "UberMoveText";
   }
 }
 /* --------mobile l-425--------- */
-@media screen and (min-width:375px) {
+@media screen and (min-width:425px) {
   .city-container{
     margin:0 16px;
   }
 }
+@media screen and (min-width:768px) {
+ .map-img{
+margin: 16px 0 11px 0;
+height: 365px;
+ }
+.map-img img{
+  height: 363px;
+}
+}
+
 /* -----------------labtop 1024--------------- */
 
 @media screen and (min-width: 1024px){
