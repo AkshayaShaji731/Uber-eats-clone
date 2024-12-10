@@ -108,7 +108,7 @@ body{
 .account:hover{
   background-color: #f3f3f3;
 }
-.account-lap{
+.account-lap { 
   margin-right: 16px;
   background-color: var(--secondary);
   height:36px;
@@ -121,6 +121,8 @@ body{
   /* display: inline-flex;
   justify-content: center;
   align-items: center; */
+}
+.account-lap a{
   color: var(--primary);
   line-height:16px;
   font-weight: 500;
@@ -167,7 +169,7 @@ display: block;
 }
 .banner h2{
 margin-top: 0px;
-margin-bottom:24px;
+margin-bottom:22px;
 line-height:44px;
 font-weight:700;
 font-size: 36px;
@@ -288,7 +290,7 @@ text-decoration:none;
 font-size:14px;
 font-weight: 500;
 font-family: "UberMoveText";
-margin-top:24px;
+margin-top:14px;
 line-height: 16px;
 }
 .link a{
@@ -440,7 +442,7 @@ justify-content: center;
 flex-direction: column;
 }
 .city-space-top{
-  height: 80px;
+  height: 68px;
   display: none;
 }
 .city-head{
@@ -480,12 +482,14 @@ font-family: "UberMove";
 display: block;
 }
 .map-img{
-margin:14px 0 15px 0;
+/* margin:14px 0 15px 0; */
+margin: 16px 0 15px 0;
+height: 360px;
 }
 .map img{
 /* margin: 16px 0; */
 width:100%;
-height: 360px;
+height:360px;
 display: block;
 object-fit: cover;
 object-position:center;
@@ -524,7 +528,7 @@ font-family: "UberMoveText";
 cursor: pointer;
 
 }
-.space-city{
+.space-country{
 height: 48px;
 display: block;
 }
@@ -558,12 +562,15 @@ font-weight:700;
 font-family: "UberMove";
 margin: 0;  
 }
-.grid-country-container{
+.grid-country-container-1{
 margin-top: 24px;
 display: grid;
 grid-template-columns:repeat(2,1fr);
 grid-template-rows: repeat(15,1fr);
 gap: 24px 8px;
+}
+.grid-country-container-2{
+  display: none;
 }
 .grid-country{
 line-height: 24px;
@@ -583,6 +590,9 @@ font-size: 16px;
 font-family: "UberMoveText";
 cursor: pointer;
 color: var(--primary);
+}
+.country-link-top{
+  display: none;
 }
 footer{
 border-top: 1px solid #f3f3f3;
@@ -703,11 +713,28 @@ height: 16px;
 cursor: pointer;
 margin-bottom: 4px;
 }
-.footer-container-3{
+.social-space{
+  display: none;
+}
+.footer-container-3-top{
+display: flex;
+flex-direction: column;
+/* margin-bottom: 40px; */
+color: var(--primary);
+}
+.f-container-space{
+  width: 40px;
+  flex-shrink: 0;
+  display: none;
+}
+.footer-container-3-bottom{
 display: flex;
 flex-direction: column;
 margin-bottom: 40px;
 color: var(--primary);
+}
+.fb-container-space{
+  display: none;
 }
 .container-a{
 line-height: 20px;
@@ -743,6 +770,27 @@ font-weight: normal;
 font-family: "UberMoveText";
 }
 
+/* ------------mobile m-375------------ */
+@media screen and (min-width:375px) {
+  .city-container{
+    margin: 1px 16px 0 16px;
+  }
+}
+/* --------mobile l-425--------- */
+@media screen and (min-width:425px) {
+  .city-container{
+    margin:0 16px;
+  }
+}
+@media screen and (min-width:768px) {
+ .map-img{
+margin: 16px 0 11px 0;
+height: 365px;
+ }
+.map-img img{
+  height: 363px;
+}
+}
 
 /* -----------------labtop 1024--------------- */
 
@@ -783,9 +831,10 @@ font-family: "UberMoveText";
   main{
     display: flex;
     justify-content: left;
-    min-width: 1024px;
-    max-width: 1928px;
+    /* min-width: 1024px;
+    max-width: 1928px; */
     position: relative;
+    align-items: center;
     margin-top:169px;
     /* padding: 0 40px; */
     padding: 0 24px;
@@ -796,8 +845,8 @@ font-family: "UberMoveText";
     margin-bottom: 30px;
     line-height: 64px;
     font-size:52px;
-    /* font-weight: 700;
-    font-family: "UberMove"; */
+    font-weight: 700;
+    font-family: "UberMove";
   }
   .container{
     /* margin: 0; */
@@ -834,6 +883,7 @@ font-family: "UberMoveText";
    }
   .search{
     width:max-content;
+    margin-top: 0;
   }
   .link{
     margin-top: 14px;
@@ -845,7 +895,7 @@ font-family: "UberMoveText";
     display: none;
   }
   .space-service{
-    height: 65px;
+    height: 64px;
   }
   .service{
     margin: 0 -12px -24px -12px;
@@ -863,33 +913,38 @@ font-family: "UberMoveText";
     padding: 0 12px;
   }
   .service img{
-    margin-bottom:8px;
+    margin-bottom:9px;
     height: auto;
   }
   .service #head{
     font-size: 28px;
     line-height: 36px;
   }
-  .search{
-    margin-top:0px;
-  }
   .space-city{
-    height: 80px;
+    height: 68px;
+    flex-shrink: 0;
+  }
+  .space-city-top{
+    height: 68px;
     flex-shrink: 0;
   }
   .city-container{
     margin: 0px;
     padding: 0 40px;
-    min-width: 1024px;
-    max-width: 1920;
+    /* min-width: 1024px;
+    max-width: 1920; */
   }
   .city-space-top{
-    display: block;
+    display:block;
   }
   .city-head a{
     display: inline-flex;
     justify-content:center;
     align-items: center;
+    margin-top:23px;
+  }
+  .city-head{
+    margin-bottom: 6px;
   }
   .city-container h2 {
     font-size: 36px;
@@ -899,21 +954,144 @@ font-family: "UberMoveText";
   display:none;
 }
 .grid-city-container-2{
-  margin: 0px;
+  margin-top: 9px;
   display: grid;
   grid-template-columns:repeat(4,1fr);
   grid-template-rows: repeat(6,1fr);
-  gap: 16px 8px;
+  gap: 24px;
   color: var(--primary);
 }
 #city-link{
   display: none;
 }
+.country-container{
+  padding: 0 24px;
+}
 .country-head a{
   display: flex;
+  justify-content:center;
+  align-items: center;
 }
-.grid-country-container{
+.country-head p{
+  line-height: 44px;
+  font-weight: 700;
+  font-size: 36px;
+  font-family: "UberMove";
+}
+.grid-country-container-1{
+  display: none;
+}
+.grid-country-container-2{
+  display: grid;
   grid-template-columns:repeat(4,1fr);
-grid-template-rows: repeat(8,1fr);
+ grid-template-rows: repeat(8,1fr);
+ gap: 24px;
+ grid-auto-flow: column;
+ margin-top: 24px;
 }
+#country-link{
+  display: none ;
+}
+.space-country{
+  height: 56px;
+  display: block;
+  }
+footer{
+  margin-bottom: 0px;
+    margin-top: 56px;
+    padding: 72px 0px 72px;
+  }
+  .inner-footer{
+    padding:0 40px;
+    margin: 0 auto;
+  }
+  .footer-top{
+    display: flex;
+  }
+  .footer-icon{
+    flex: 2;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom:0px;
+  }
+  .footer-container-1{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin-bottom: 0px;
+  }
+  .footer-container-1 a{
+   margin: 0;
+   padding: 0;
+  }
+  .footer-container-2{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin-bottom:0px;
+  }
+  .footer-bottom-1{
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  .social-media{
+    display: flex;
+    flex: none;
+    flex-direction: row;
+    margin-bottom: 0px;
+  }
+  .social-space{
+    display: block;
+    flex: 1 0 36px;
+    /* width: 36px; */
+  }
+  .footer-container-3-top{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0px;
+  }
+  .f-container-space{
+    display: block;
+  }
+  .footer-bottom-2{
+    display: flex;
+  }
+  .fb-container-space{
+    display:block;
+    flex: 1 0 36px;
+  }
+  .footer-container-3-bottom{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0px;
+  }
+  .app-icon{
+    margin: 0;
+  }
+}
+
+/* ------------laptop 1440--------- */
+@media screen and (min-width:1440px) {
+  .inner-footer{
+    margin: 0 80px;
+  }
+  
+}
+@media screen and (min-width:1814px) {
+  main{
+    display: flex;
+    justify-content: left;
+    /* min-width: 1024px;
+    max-width: 1928px; */
+    position: relative;
+    align-items: center;
+    margin-top:213px;
+    padding: 0 24px;
+  }
+  .inner-footer{
+    margin: 0 280px;
+  }
 }
