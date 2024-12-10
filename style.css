@@ -713,11 +713,28 @@ height: 16px;
 cursor: pointer;
 margin-bottom: 4px;
 }
-.footer-container-3{
+.social-space{
+  display: none;
+}
+.footer-container-3-top{
 display: flex;
 flex-direction: column;
 margin-bottom: 40px;
 color: var(--primary);
+}
+.f-container-space{
+  width: 40px;
+  flex-shrink: 0;
+  display: none;
+}
+.footer-container-3-bottom{
+display: flex;
+flex-direction: column;
+margin-bottom: 40px;
+color: var(--primary);
+}
+.fb-container-space{
+  display: none;
 }
 .container-a{
 line-height: 20px;
@@ -973,10 +990,84 @@ height: 365px;
  margin-top: 24px;
 }
 #country-link{
-  display: none;
+  display: none ;
 }
 .space-country{
   height: 56px;
   display: block;
+  }
+footer{
+  margin-bottom: 0px;
+    margin-top: 56px;
+    padding: 72px 40px 88px;
+  }
+  .footer-top{
+    display: flex;
+  }
+  .footer-icon{
+    flex: 2;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom:0px;
+  }
+  .footer-container-1{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin-bottom: 0px;
+  }
+  .footer-container-1 a{
+   margin: 0;
+   padding: 0;
+  }
+  .footer-container-2{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin-bottom:0px;
+  }
+  .footer-bottom-1{
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  .social-media{
+    display: flex;
+    flex: none;
+    flex-direction: row;
+    margin-bottom: 0px;
+  }
+  .social-space{
+    display: block;
+    flex: 1 0 36px;
+    /* width: 36px; */
+  }
+  .footer-container-3-top{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0px;
+  }
+  .f-container-space{
+    display: block;
+  }
+  .footer-bottom-2{
+    display: flex;
+  }
+  .fb-container-space{
+    display:block;
+    flex: 1 0 36px;
+  }
+  .footer-container-3-bottom{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0px;
+  }
+  .app-icon{
+    margin-top: 2px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
