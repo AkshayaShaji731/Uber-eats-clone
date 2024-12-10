@@ -745,13 +745,18 @@ font-weight: normal;
 font-family: "UberMoveText";
 }
 
-/* ------------mobile l-375------------ */
+/* ------------mobile m-375------------ */
 @media screen and (min-width:375px) {
   .city-container{
     margin: 1px 16px 0 16px;
   }
 }
-
+/* --------mobile l-425--------- */
+@media screen and (min-width:375px) {
+  .city-container{
+    margin:0 16px;
+  }
+}
 /* -----------------labtop 1024--------------- */
 
 @media screen and (min-width: 1024px){
