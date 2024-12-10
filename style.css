@@ -480,12 +480,14 @@ font-family: "UberMove";
 display: block;
 }
 .map-img{
-margin:14px 0 15px 0;
+/* margin:14px 0 15px 0; */
+margin: 16px 0 15px 0;
+height: 360px;
 }
 .map img{
 /* margin: 16px 0; */
 width:100%;
-height: 360px;
+height:360px;
 display: block;
 object-fit: cover;
 object-position:center;
@@ -743,6 +745,12 @@ font-weight: normal;
 font-family: "UberMoveText";
 }
 
+/* ------------mobile l-375------------ */
+@media screen and (min-width:375px) {
+  .city-container{
+    margin: 1px 16px 0 16px;
+  }
+}
 
 /* -----------------labtop 1024--------------- */
 
