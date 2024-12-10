@@ -108,12 +108,36 @@ body{
 .account:hover{
   background-color: #f3f3f3;
 }
+.account-lap{
+  margin-right: 16px;
+  background-color: var(--secondary);
+  height:36px;
+  padding: 12px;
+  border-radius:500px;
+  white-space: nowrap;
+  box-sizing: border-box;
+  cursor: pointer;
+  display:none;
+  /* display: inline-flex;
+  justify-content: center;
+  align-items: center; */
+  color: var(--primary);
+  line-height:16px;
+  font-weight: 500;
+  font-size:14px;
+  font-family: "UberMoveText";
+  text-decoration: none;
+}
+
+.account-lap:hover{
+  background-color:#f3f3f3;
+}
 .signup{
   height: 36px;
   padding: 8px 12px;
   border-radius: 500px;
   display: inline-flex;
-  justify-content: centeral;
+  justify-content: center;
   align-items: center;
   background-color: var(--primary);
   box-sizing: border-box;
@@ -143,7 +167,7 @@ display: block;
 }
 .banner h2{
 margin-top: 0px;
-margin-bottom:24px;
+margin-bottom:22px;
 line-height:44px;
 font-weight:700;
 font-size: 36px;
@@ -151,10 +175,16 @@ font-family: "UberMove";
 display: block;
 }
 .container{
-padding:8px 0;
+padding:10px 0;
 display: flex;
 flex-direction: column;
 gap: 8px;
+}
+.space-container{
+  width:7px;
+  height: 1px;
+  flex-shrink: 0;
+  display: none;
 }
 .input-container-1{
 display: flex;
@@ -235,7 +265,7 @@ align-items: center;
 justify-content: center;
 }
 .search{
-margin-top: 8px;
+margin-top: 6px;
 border-radius: 8px;
 padding: 12px 16px;
 min-height: 56px;
@@ -299,7 +329,8 @@ width:64px;
 flex-shrink: 0;
 }
 .app-space{
-width:33.5px;
+width:16px;
+flex-shrink:0;
 height: 1px;
 display: block;
 }
@@ -397,7 +428,7 @@ margin-bottom:36px;
 height: 37px;
 flex-shrink: 0;
 } 
-.space-service{
+.space-city{
 height: 48px;
 flex-shrink: 0;
 display: block;
@@ -407,6 +438,21 @@ margin:0 16px;
 display: flex;
 justify-content: center;  
 flex-direction: column;
+}
+.city-space-top{
+  height: 80px;
+  display: none;
+}
+.city-head{
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.city-head a{
+  /* display: inline-flex;
+  justify-content: flex-end; */
+  display: none;
+  
 }
 .city-container h2{
 margin-block-start:0.83px; 
@@ -418,6 +464,17 @@ font-size: 24px;
 font-weight: 700;
 font-family: "UberMove";
 }
+#city-link-top{
+  text-decoration: underline;
+  color: var(--primary);
+  line-height: 20px;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "UberMoveText";
+  cursor: pointer;
+  
+  }
+
 .map{
 /* margin: 15px  0 10px 0; */
 display: block;
@@ -427,9 +484,11 @@ margin:14px 0 15px 0;
 }
 .map img{
 /* margin: 16px 0; */
-width:100.5%;
-height: 362px;
+width:100%;
+height: 360px;
 display: block;
+object-fit: cover;
+object-position:center;
 }
 .grid-city-container{
 margin: 0px;
@@ -439,6 +498,9 @@ grid-template-rows: repeat(6,1fr);
 gap: 16px 8px;
 color: var(--primary);
 }
+.grid-city-container-2{
+  display: none;
+  }
 .grid-city{
 /* margin-top: 12px; */
 line-height: 24px;
@@ -472,6 +534,23 @@ display: flex;
 justify-content:center;
 flex-direction: column;
 }
+.country-head{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+  }
+ .country-head a{
+  display: none;
+ } 
+ #country-link-top{
+  text-decoration:underline;
+  line-height: 20px;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "UberMoveText";
+  cursor: pointer;
+  color: var(--primary);
+  }
 .country-container p{
 line-height: 32px;
 font-size: 24px;
@@ -662,4 +741,179 @@ line-height: 20px;
 font-size: 14px;
 font-weight: normal;
 font-family: "UberMoveText";
+}
+
+
+/* -----------------labtop 1024--------------- */
+
+@media screen and (min-width: 1024px){
+  .wrapper{
+    background-image: url("https://www.ubereats.com/_static/c413f20400e04805.webp");
+  }
+  .header{
+    height:64px;
+    padding: 0 40px;
+  }
+  .burger {
+    margin-left: -14px;
+   margin-right:8px;
+  }
+  .burger-btn{
+    width: 48px;
+    height: 48px;
+  }
+   .burger .space{
+    /* min-width: 250px; */
+    display: flex;
+    justify-content: center;
+    align-self: flex-start;
+    flex: 1 1 auto;
+  }
+  .account{
+    display: none;
+  }
+  .account-lap{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+  .signup{
+    justify-content: center;
+  }
+  main{
+    display: flex;
+    justify-content: left;
+    min-width: 1024px;
+    max-width: 1928px;
+    position: relative;
+    margin-top:169px;
+    /* padding: 0 40px; */
+    padding: 0 24px;
+  }
+  .banner h2{
+    /* max-width:60%; */
+    width: 100%;
+    margin-bottom: 30px;
+    line-height: 64px;
+    font-size:52px;
+    /* font-weight: 700;
+    font-family: "UberMove"; */
+  }
+  .container{
+    /* margin: 0; */
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: flex-start;
+  } 
+
+  .space-container{
+    display:block;
+  }
+  .input-container-1{
+    min-width: 496px;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    /* padding: 8px 16px; */
+    position: relative;
+  }
+  .input-container-1 img{
+   flex-shrink: 0;
+   /* padding: 8px 0; */
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   margin-right: 16px;
+  }  
+  .input .space{
+    width:4px;
+  }
+   .input-container-1 .text{
+    font-weight: 500;
+   }
+  .search{
+    width:max-content;
+  }
+  .link{
+    margin-top: 14px;
+  }
+  .space-maintop{
+   display: none;
+  }
+  .uber-app{
+    display: none;
+  }
+  .space-service{
+    height: 65px;
+  }
+  .service{
+    margin: 0 -12px -24px -12px;
+    box-sizing: border-box;
+   display: flex;
+   flex-wrap: nowrap;
+    /* padding: 0 12px; */
+    width: 100%;
+    margin-bottom: 24px;
+    flex-direction: row;
+    
+  }
+  .service-1,.service-2 ,.service-3{
+    width:33.33%;
+    padding: 0 12px;
+  }
+  .service img{
+    margin-bottom:8px;
+    height: auto;
+  }
+  .service #head{
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .search{
+    margin-top:0px;
+  }
+  .space-city{
+    height: 80px;
+    flex-shrink: 0;
+  }
+  .city-container{
+    margin: 0px;
+    padding: 0 40px;
+    min-width: 1024px;
+    max-width: 1920;
+  }
+  .city-space-top{
+    display: block;
+  }
+  .city-head a{
+    display: inline-flex;
+    justify-content:center;
+    align-items: center;
+  }
+  .city-container h2 {
+    font-size: 36px;
+    line-height: 44px;
+}
+.grid-city-container-1{
+  display:none;
+}
+.grid-city-container-2{
+  margin: 0px;
+  display: grid;
+  grid-template-columns:repeat(4,1fr);
+  grid-template-rows: repeat(6,1fr);
+  gap: 16px 8px;
+  color: var(--primary);
+}
+#city-link{
+  display: none;
+}
+.country-head a{
+  display: flex;
+}
+.grid-country-container{
+  grid-template-columns:repeat(4,1fr);
+grid-template-rows: repeat(8,1fr);
+}
 }
