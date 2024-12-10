@@ -719,7 +719,7 @@ margin-bottom: 4px;
 .footer-container-3-top{
 display: flex;
 flex-direction: column;
-margin-bottom: 40px;
+/* margin-bottom: 40px; */
 color: var(--primary);
 }
 .f-container-space{
@@ -999,7 +999,11 @@ height: 365px;
 footer{
   margin-bottom: 0px;
     margin-top: 56px;
-    padding: 72px 40px 88px;
+    padding: 72px 0px 72px;
+  }
+  .inner-footer{
+    padding:0 40px;
+    margin: 0 auto;
   }
   .footer-top{
     display: flex;
@@ -1065,9 +1069,14 @@ footer{
     margin-bottom: 0px;
   }
   .app-icon{
-    margin-top: 2px;
-    margin-bottom: 0;
-    margin-left: 0;
-    margin-right: 0;
+    margin: 0;
   }
+}
+
+/* ------------laptop 1440--------- */
+@media screen and (min-width:1440px) {
+  .inner-footer{
+    margin: 0 80px;
+  }
+  
 }
