@@ -108,7 +108,7 @@ body{
 .account:hover{
   background-color: #f3f3f3;
 }
-.account-lap{
+.account-lap { 
   margin-right: 16px;
   background-color: var(--secondary);
   height:36px;
@@ -121,6 +121,8 @@ body{
   /* display: inline-flex;
   justify-content: center;
   align-items: center; */
+}
+.account-lap a{
   color: var(--primary);
   line-height:16px;
   font-weight: 500;
@@ -265,7 +267,7 @@ align-items: center;
 justify-content: center;
 }
 .search{
-margin-top: 6px;
+margin-top: 8px;
 border-radius: 8px;
 padding: 12px 16px;
 min-height: 56px;
@@ -288,7 +290,7 @@ text-decoration:none;
 font-size:14px;
 font-weight: 500;
 font-family: "UberMoveText";
-margin-top:24px;
+margin-top:14px;
 line-height: 16px;
 }
 .link a{
@@ -440,7 +442,7 @@ justify-content: center;
 flex-direction: column;
 }
 .city-space-top{
-  height: 80px;
+  height: 68px;
   display: none;
 }
 .city-head{
@@ -492,7 +494,7 @@ display: block;
 object-fit: cover;
 object-position:center;
 }
-.grid-city-container{
+.grid-city-container-1{
 margin: 0px;
 display: grid;
 grid-template-columns:repeat(2,1fr);
@@ -526,7 +528,7 @@ font-family: "UberMoveText";
 cursor: pointer;
 
 }
-.space-city{
+.space-country{
 height: 48px;
 display: block;
 }
@@ -560,12 +562,15 @@ font-weight:700;
 font-family: "UberMove";
 margin: 0;  
 }
-.grid-country-container{
+.grid-country-container-1{
 margin-top: 24px;
 display: grid;
 grid-template-columns:repeat(2,1fr);
 grid-template-rows: repeat(15,1fr);
 gap: 24px 8px;
+}
+.grid-country-container-2{
+  display: none;
 }
 .grid-country{
 line-height: 24px;
@@ -585,6 +590,9 @@ font-size: 16px;
 font-family: "UberMoveText";
 cursor: pointer;
 color: var(--primary);
+}
+.country-link-top{
+  display: none;
 }
 footer{
 border-top: 1px solid #f3f3f3;
@@ -806,9 +814,10 @@ height: 365px;
   main{
     display: flex;
     justify-content: left;
-    min-width: 1024px;
-    max-width: 1928px;
+    /* min-width: 1024px;
+    max-width: 1928px; */
     position: relative;
+    align-items: center;
     margin-top:169px;
     /* padding: 0 40px; */
     padding: 0 24px;
@@ -819,8 +828,8 @@ height: 365px;
     margin-bottom: 30px;
     line-height: 64px;
     font-size:52px;
-    /* font-weight: 700;
-    font-family: "UberMove"; */
+    font-weight: 700;
+    font-family: "UberMove";
   }
   .container{
     /* margin: 0; */
@@ -857,6 +866,7 @@ height: 365px;
    }
   .search{
     width:max-content;
+    margin-top: 0;
   }
   .link{
     margin-top: 14px;
@@ -868,7 +878,7 @@ height: 365px;
     display: none;
   }
   .space-service{
-    height: 65px;
+    height: 64px;
   }
   .service{
     margin: 0 -12px -24px -12px;
@@ -886,33 +896,38 @@ height: 365px;
     padding: 0 12px;
   }
   .service img{
-    margin-bottom:8px;
+    margin-bottom:9px;
     height: auto;
   }
   .service #head{
     font-size: 28px;
     line-height: 36px;
   }
-  .search{
-    margin-top:0px;
-  }
   .space-city{
-    height: 80px;
+    height: 68px;
+    flex-shrink: 0;
+  }
+  .space-city-top{
+    height: 68px;
     flex-shrink: 0;
   }
   .city-container{
     margin: 0px;
     padding: 0 40px;
-    min-width: 1024px;
-    max-width: 1920;
+    /* min-width: 1024px;
+    max-width: 1920; */
   }
   .city-space-top{
-    display: block;
+    display:block;
   }
   .city-head a{
     display: inline-flex;
     justify-content:center;
     align-items: center;
+    margin-top:23px;
+  }
+  .city-head{
+    margin-bottom: 6px;
   }
   .city-container h2 {
     font-size: 36px;
@@ -922,21 +937,46 @@ height: 365px;
   display:none;
 }
 .grid-city-container-2{
-  margin: 0px;
+  margin-top: 9px;
   display: grid;
   grid-template-columns:repeat(4,1fr);
   grid-template-rows: repeat(6,1fr);
-  gap: 16px 8px;
+  gap: 24px;
   color: var(--primary);
 }
 #city-link{
   display: none;
 }
+.country-container{
+  padding: 0 24px;
+}
 .country-head a{
   display: flex;
+  justify-content:center;
+  align-items: center;
 }
-.grid-country-container{
+.country-head p{
+  line-height: 44px;
+  font-weight: 700;
+  font-size: 36px;
+  font-family: "UberMove";
+}
+.grid-country-container-1{
+  display: none;
+}
+.grid-country-container-2{
+  display: grid;
   grid-template-columns:repeat(4,1fr);
-grid-template-rows: repeat(8,1fr);
+ grid-template-rows: repeat(8,1fr);
+ gap: 24px;
+ grid-auto-flow: column;
+ margin-top: 24px;
 }
+#country-link{
+  display: none;
+}
+.space-country{
+  height: 56px;
+  display: block;
+  }
 }
