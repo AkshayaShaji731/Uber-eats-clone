@@ -1080,3 +1080,18 @@ footer{
   }
   
 }
+@media screen and (min-width:1814px) {
+  main{
+    display: flex;
+    justify-content: left;
+    /* min-width: 1024px;
+    max-width: 1928px; */
+    position: relative;
+    align-items: center;
+    margin-top:213px;
+    padding: 0 24px;
+  }
+  .inner-footer{
+    margin: 0 280px;
+  }
+}
