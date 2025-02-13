@@ -1096,4 +1096,7 @@ footer{
   .inner-footer{
     /* margin: 0 280px; */
   }
+  .banner{
+    top: 120px;
+  }
 }
