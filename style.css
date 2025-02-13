@@ -1076,7 +1076,9 @@ footer{
 /* ------------laptop 1440--------- */
 @media screen and (min-width:1440px) {
   .inner-footer{
-    margin: 0 80px;
+    /* margin: 0 80px; */
+    max-width: 1200px;
+    margin-inline: auto;
   }
   
 }
@@ -1092,6 +1094,6 @@ footer{
     padding: 0 24px;
   }
   .inner-footer{
-    margin: 0 280px;
+    /* margin: 0 280px; */
   }
 }
