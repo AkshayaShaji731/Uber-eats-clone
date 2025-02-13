@@ -164,6 +164,7 @@ align-items: center;
 .banner{
 position:absolute;
 top: 104px;
+/* top: 110px; */
 padding: 0 16px;
 display: block;
 }
@@ -838,6 +839,9 @@ height: 365px;
     margin-top:169px;
     /* padding: 0 40px; */
     padding: 0 24px;
+  }
+  .banner{
+    top: 110px;
   }
   .banner h2{
     /* max-width:60%; */
